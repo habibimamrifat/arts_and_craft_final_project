@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="container mx-auto bg-slate-200 ">
+
+    <div class="capitalize p-8 mt-[3%] flex flex-col items-center md:flex-row justify-between gap-6">
+
+      <!-- left side of sign up starts  -->
+
+      <div id="data_collector" class="mx-auto flex flex-col  justify-center items-center bg-slate-300 w-full rounded-lg  hover:border-solid border-2 border-slate-800 p-4">
+
+        <h1 class=" p-4 text-2xl font-extrabold text-white">student sign up</h1>
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Name</h1>
+
+        <input id="name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="First Name">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Last name</h1>
+
+        <input id="Last_name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Last Name">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">E-mail</h1>
+
+        <input id="email" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="email" placeholder="E-mail">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Mobile </h1>
+
+        <input id="mobileno" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Mobile ">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Birth Date</h1>
+
+        <input id="birthday" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="date" placeholder="Birth Date">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Address</h1>
+
+        <input id="address" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Address">
+        
+
+        <div class="mt-2">
+          <h1 class=" pl-4 font-extrabold text-slate-700">chose Hobby</h1>
+          <button id="btn-hobby" class=" mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">Hobby <i class="fa-solid fa-arrow-down px-2"></i></button>
+          <ul id="dash-hobby" class="w-fit pl-2 font-semibold invisible">
+            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Art</li>
+            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Crafting</li>
+            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">electronics</li>
+            <button id="hobby-arrow" class="px-4 py-2 border-solid border-2 border-white  bg-slate-400 rounded-md text-center" ><i class="fa-solid fa-angle-up"></i></button>
+          </ul>
+        
+        </div>
+
+        <button id="btn-s-signup" class=" w-[94%] capitalize font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000"> sign Up </button>
+
+      </div> 
+
+      <!-- left side of sign up ends  -->
+
+
+      <!-- right side of sign up starts  -->
+
+      <div id="pin_match" class="mx-auto bg-center bg-cover bg-no-repeat h-[100vh] flex flex-col justify-center items-center bg-slate-300 w-full rounded-lg ">
+
+        <div class="items-center">
+
+          <div id="code-match" class="mt-5 invisible">
+
+            <h1 class=" p-4 font-extrabold text-slate-700">
+              please inter the code sent via email <span id="gen_code" class="text-2xl pl-4 font-extrabold text-slate-700">1234</span>
+            </h1>
+            <input id="code_field" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="inter code">
+             <br>
+            <button id="btn-submit" class=" capitalize mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">submit</button>
+          </div>
+  
+          <div id="dash-create-pass" class="mt-5 invisible">
+            <h1 class=" pl-4 font-extrabold text-slate-700">create a password</h1>
+
+            <input id="create_password" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="create password">
+
+            <h1 class=" pl-4 font-extrabold text-slate-700">confirm password</h1>
+
+            <input id="confirm_password" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="confirm password">
+            
+            <br>
+            <button id="final_confirm" class="w-[94%] capitalize mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">confirm</button>
+          </div>
+
+        </div>
+         
+      </div>
+
+      <!-- right side of sign up ends  -->
+
+    </div>
+   
+
+      
+   <!-- js files  -->
+   <script src="./utility.js"></script>
+   <script src="./skilled_sign_up.js"></script>
+  
+  
+
+    
+</body>
+</html>

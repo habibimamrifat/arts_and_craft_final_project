@@ -1,0 +1,12 @@
+document.getElementById('btn-burger').addEventListener('click',function(){
+    viewHiddenSection('menu-bar')
+})
+document.getElementById('close-btn').addEventListener('click',function(){
+    closeViewedSection('menu-bar')
+})
+document.getElementById('btn-signup').addEventListener('click',function(){
+    viewHiddenSection('dash-signup')
+})
+document.getElementById('signup-arrow').addEventListener('click',function(){
+    closeViewedSection('dash-signup')
+})

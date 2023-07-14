@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTS AND CRUFT</title>
+
+  <!-- TAIL WIND CSS  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body class="container mx-auto bg-blue">
+
+<!---------- 
+  header: logo + nav bar +shop 
+  --------- -->
+
+  <header class="border-white">
+    <!-- nav bar  -->
+      <nav class=" capitalize bg-slate-900 text-white  mx-auto flex justify-between items-center">
+        
+        <!-- logo section  -->
+        <div class="">
+          <h1 class="p-2"> arts & cruft <i class="fa-solid fa-palette"></i></h1>
+        </div>
+        
+        <!-- nav links  -->
+        <div class=" flex items-center justify-center gap-[2vw] ">
+
+          
+
+            <ul>
+              <button id="btn-burger" class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000  text-white  md:invisible">
+                <i class="fa-solid fa-bars"></i>
+              </button> 
+            </ul>
+
+            <ul id="menu-bar" class="bg-slate-900 invisible flex flex-col absolute top-[9%]
+            md:static md:visible md:flex md:flex-row justify-center items-center">
+           
+              <li>
+                <button class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">
+                  <a  href=""> Home <i class="fa-solid fa-house"></i></a>
+                </button>
+              </li>
+
+              <li>
+                <button class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">
+                  <a  href=""> About Us <i class="fa-solid fa-people-group"></i></a>
+                </button>
+                
+              </li>
+
+              <li>
+
+                <button id="btn-signup" class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">
+                   Sign up <i class="fa-solid fa-user-plus"></i>
+                </button>
+
+                <ul id="dash-signup" class="flex flex-col capitalize absolute mt-auto gap-2 float-left invisible">
+
+                  <a class="px-4 py-2 border-solid border-2 border-white  bg-slate-900 rounded-md" href="./skilled_sign_up.html">skilled sign up</a>
+
+                  <a class="px-4 py-2 border-solid border-2 border-white  bg-slate-900 rounded-md" href="./vendor_sign_up.html">vendor sign up</a>
+
+                  <button id="signup-arrow" class="px-4 py-2 border-solid border-2 border-white  bg-slate-900 rounded-md text-center" ><i class="fa-solid fa-angle-up"></i></button>
+
+                </ul>
+
+              </li>
+
+              <li>
+                <button id="close-btn" class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000 md:invisible">
+                  <a  href=""><i class="fa-solid fa-angle-up"></i></a>
+                </button>
+              </li>
+
+              
+             
+          </ul>
+
+         
+
+          
+
+        </div>
+
+        <!-- shop button  -->
+        <div class="capitalize class=">
+          <!-- market place  -->
+          <button class="py-4 px-9 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">
+            <h1 ><a href="./shop.html">Shop </a><i class="fa-solid fa-shop"></i></h1>
+          </button>
+        </div>
+      </nav>
+  </header>
+  
+  <!---------------
+   header ends here 
+  ------------- -->
+
+  <!-- main section: log in form and other log in icon  -->
+
+  <main class="bg-gradient-to-t from-slate-900 to-slate-400 min-h-[73vh] my-auto flex justify-center items-center ">
+
+    <div class="text-white">
+
+
+      <div class="capitalize p-5">
+        <input class="p-3 px-28 rounded-full hover:scale-[1.1] duration-1000" type="text" placeholder="email">
+        <h1 class="ps-3">inter email</h1>
+
+        <input class="p-3 px-28 rounded-full hover:scale-[1.1] duration-1000" type="password" placeholder="password">
+        <h1 class="ps-3">inter password</h1>
+      </div>
+
+      <div class="flex justify-center items-center capitalize gap-[2vw]">
+        <button class="p-4 hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">skilled login</button><br>
+        <button class="p-4  hover:bg-slate-400 rounded-full hover:scale-[1.1] duration-1000">vendor login</button>
+      </div>
+
+      <div class="flex gap-[4vh] mt-5 items-center justify-center">
+
+        <div class="flex flex-col justify-center items-center hover:bg-slate-400 rounded-full p-5 hover:scale-[1.1] duration-1000">
+          <i class="fa-brands fa-facebook"></i>
+          <h1>facebook</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center hover:bg-slate-400 rounded-full p-5 hover:scale-[1.1] duration-1000">
+          <i class="fa-brands fa-instagram"></i>
+          <h1>instagram</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center hover:bg-slate-400 rounded-full p-5 hover:scale-[1.1] duration-1000">
+          <i class="fa-brands fa-google"></i>
+          <h1>google</h1>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    
+
+  </main>
+  
+  <!------------------ 
+    main section ends here 
+  --------------------->
+
+  <!-- footer starts here  -->
+
+   <footer class="container">
+
+    <div class="p-5 bg-slate-900 text-white border-solid border-2 border-white flex justify-around items-center md:flex-row">
+      <div class="capitalize p-2 m-2">
+        <h1 class="text-2xl">Developed BY</h1>
+        <h3>abu saleh mohammad habib imam</h3>
+        <h3>Id:18103179</h3>
+        <h3>iubat</h3>
+      </div>
+      <div class="capitalize p-2 m-2">
+        <h1 class="text-2xl">social</h1>
+        <h3>facebook</h3>
+        <h3>instagram</h3>
+        <h3>linked in</h3>
+      </div>
+      <div class="capitalize p-2 m-2">
+        <h1 class="text-2xl">Honarable mention</h1>
+        <h3>akaar it</h3>
+      </div>
+    </div>
+
+   </footer>
+
+  <!-- footer ends here  -->
+
+
+  <!-- js file included -->
+  <script src="./utility.js"></script>
+  <script src="./dashboard.js"></script>
+
+</body>
+</html>
