@@ -14,7 +14,7 @@ function viewHiddenSection(elementID)
         send_code.innerText=code_str;
 
         const addClassTo = document.getElementById(elementID);
-        addClassTo.classList.remove('invisible')
+        addClassTo.classList.remove('hidden')
         return code_str;
       }
       else{
@@ -36,7 +36,7 @@ function viewHiddenSection(elementID)
    if(code == user_code)
    {
     const addClassTo = document.getElementById(elementID);
-    addClassTo.classList.remove('invisible')
+    addClassTo.classList.remove('hidden')
    }
    else{
 
@@ -58,19 +58,22 @@ function viewHiddenSection(elementID)
 
   else{
     const addClassTo = document.getElementById(elementID);
-      addClassTo.classList.remove('invisible')
+      addClassTo.classList.remove('hidden')
 
   }
  
   
 }
 
+
 function closeViewedSection(elementID)
 {
   const addClassTo = document.getElementById(elementID);
-  addClassTo.classList.add('invisible')
+  addClassTo.classList.add('hidden')
  
 }
+
+
 
 function dataCollectorIsStudent(isStudent)
 {
@@ -99,10 +102,36 @@ function dataCollectorIsStudent(isStudent)
 
     const address = document.getElementById('address').value;
     console.log(address);
+    
+
 
     if (isStudent != 'true')
     {
-      console.log("i am a student");
+
+      const shop_name = document.getElementById('shop_name').value;
+      console.log(shop_name);
+
+      const Owner_name = document.getElementById('Owner_name').value;
+      console.log(Owner_name);
+
+      const shop_email = document.getElementById('shop_email').value;
+      console.log(shop_email);
+
+      const shop_Contact_number = document.getElementById('Contact_number').value;
+      console.log(shop_Contact_number);
+
+      const Shop_address = document.getElementById('Shop_address').value;
+      console.log(Shop_address);
+
+      const shop_type = document.getElementById('shop_collector').innerText;
+      console.log(shop_type);
+    
+      
+    }
+    else{
+      const hobby = document.getElementById('hobby_collector').innerText;
+      console.log(hobby);
+
     }
 
   }

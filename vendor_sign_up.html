@@ -4,8 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    <h1>vendor</h1>
+
+
+<body class="container mx-auto bg-slate-200 ">
+
+    <div class="capitalize p-8 mt-[3%] flex flex-col items-center md:flex-row justify-between gap-6">
+
+      <!-- left side of sign up starts  -->
+
+      <div id="data_collector" class="mx-auto flex flex-col  justify-center items-center bg-slate-300 w-full rounded-lg   p-4">
+
+        <h1 class=" p-4 text-2xl font-extrabold text-white">personal Detail</h1>
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Name</h1>
+
+        <input id="name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="First Name">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Last Name</h1>
+
+        <input id="Last_name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Last Name">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">E-mail</h1>
+
+        <input id="email" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="email" placeholder="E-mail">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Mobile </h1>
+
+        <input id="mobileno" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Mobile ">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Birth Date</h1>
+
+        <input id="birthday" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="date" placeholder="Birth Date">
+
+        <h1 class=" pl-4 font-extrabold text-slate-700">Address</h1>
+
+        <input id="address" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Address">
+
+        <button id="btn-continue" class="mt-4 w-[94%] capitalize font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000"> Continue </button>
+
+      </div> 
+
+      <!-- left side of sign up ends  -->
+
+
+      <!-- right side of sign up starts  -->
+
+      <div id="shop_detail" class="mx-auto flex flex-col justify-center items-center bg-slate-300 w-full rounded-lg hidden">
+
+        <div id="data_collector" class="mx-auto flex flex-col  justify-center items-center bg-slate-300 w-full rounded-lg  hover:border-solid  p-4">
+
+            <h1 class=" p-4 text-2xl font-extrabold text-white">shop detail</h1>
+    
+            <h1 class=" pl-4 font-extrabold text-slate-700">shop Name</h1>
+    
+            <input id="shop_name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="shop Name">
+    
+            <h1 class=" pl-4 font-extrabold text-slate-700">Owner name</h1>
+    
+            <input id="Owner_name" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="owner Name">
+    
+            <h1 class=" pl-4 font-extrabold text-slate-700">Shop E-mail</h1>
+    
+            <input id="shop_email" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="email" placeholder="Shop E-mail">
+    
+            <h1 class=" pl-4 font-extrabold text-slate-700">Shop Contact Number</h1>
+    
+            <input id="Contact_number" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Shop contact number">
+  
+            <h1 class=" pl-4 font-extrabold text-slate-700">Shop Address</h1>
+    
+            <input id="Shop_address" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="Shop Address">
+            
+    
+            <div class="mt-2">
+              <h1 class=" pl-4 font-extrabold text-slate-700">chose shop Type</h1>
+
+              <button id="btn-shop" class=" mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">  <span id="shop_collector">chose Shop Type</span> <i class="fa-solid fa-arrow-down px-2"> </i> </button>
+              
+              <ul id="dash-shop" class="w-fit pl-2 font-semibold hidden">
+                <li id="art" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Art</li>
+                <li id="craft" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Crafting</li>
+                <li id="electronics" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">electronics</li>
+                <button id="hobby-arrow" class="px-4 py-2 border-solid border-2 border-white  bg-slate-400 rounded-md text-center hidden" ><i class="fa-solid fa-angle-up"></i></button>
+              </ul>
+            
+            </div>
+    
+            <button id="btn-s-signup" class="mt-2 w-[94%] capitalize font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000"> sign Up </button>
+    
+          </div> 
+         
+      </div>
+
+      <!-- right side of sign up ends  -->
+
+    </div>
+   
+
+    <!-- for floating everything in the middle mainly authentication sTARTS HERE ITS ABSOLUTE SO PROVIDE POSITION  -->
+    
+
+        <div id="code-match" class=" hidden mx-auto mt-5 w-[45%] rounded-2xl bg-white absolute top-[45%] right-[30%] p-10 shadow-lg">
+
+          <h1 class=" p-4 font-extrabold text-slate-700">
+            please inter the code sent via email <span id="gen_code" class="text-2xl pl-4 font-extrabold text-slate-700">1234</span>
+          </h1>
+          <input id="code_field" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="inter code">
+           <br>
+          <button id="btn-submit" class=" capitalize mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">submit</button>
+        </div>
+
+        <div id="dash-create-pass" class="hidden mx-auto mt-5 w-[45%] rounded-2xl bg-white absolute top-[45%] right-[30%] p-10 shadow-lg">
+          <h1 class=" pl-4 font-extrabold text-slate-700">create a password</h1>
+
+          <input id="create_password" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="create password">
+
+          <h1 class=" pl-4 font-extrabold text-slate-700">confirm password</h1>
+
+          <input id="confirm_password" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="confirm password">
+          
+          <br>
+          <button id="final_confirm" class="w-[94%] capitalize mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">confirm</button>
+        </div>
+
+      
+    <!-- THE FLOATIMG POSITION ENDS HERE  -->
+      
+   <!-- js files  -->
+
+   <script src="./utility.js"></script>
+   <script src="./vendore_signi_up.js"></script>
+  
+  
+  
+
+    
 </body>
 </html>

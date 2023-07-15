@@ -50,11 +50,13 @@
 
         <div class="mt-2">
           <h1 class=" pl-4 font-extrabold text-slate-700">chose Hobby</h1>
-          <button id="btn-hobby" class=" mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">Hobby <i class="fa-solid fa-arrow-down px-2"></i></button>
-          <ul id="dash-hobby" class="w-fit pl-2 font-semibold invisible">
-            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Art</li>
-            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Crafting</li>
-            <li class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">electronics</li>
+          <button id="btn-hobby" class=" mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000"> <span id="hobby_collector">Hobby</span> <i class="fa-solid fa-arrow-down px-2"></i></button>
+          
+          <ul id="dash-hobby" class="w-fit pl-2 font-semibold hidden">
+            
+            <li id="art" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Art</li>
+            <li id="craft" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">Crafting</li>
+            <li id="electronics" class="p-2 text-center border-solid border-2 border-white hover:bg-slate-400 rounded-md hover:scale-[1.1] duration-1000">electronics</li>
             <button id="hobby-arrow" class="px-4 py-2 border-solid border-2 border-white  bg-slate-400 rounded-md text-center" ><i class="fa-solid fa-angle-up"></i></button>
           </ul>
         
@@ -73,7 +75,7 @@
 
         <div class="items-center">
 
-          <div id="code-match" class="mt-5 invisible">
+          <div id="code-match" class="mt-5 hidden">
 
             <h1 class=" p-4 font-extrabold text-slate-700">
               please inter the code sent via email <span id="gen_code" class="text-2xl pl-4 font-extrabold text-slate-700">1234</span>
@@ -83,7 +85,7 @@
             <button id="btn-submit" class=" capitalize mt-2 font-extrabold text-slate-700 border-solid border-2 border-slate-800 py-3 px-6 hover:bg-slate-300 rounded-full hover:scale-[1.1] duration-1000">submit</button>
           </div>
   
-          <div id="dash-create-pass" class="mt-5 invisible">
+          <div id="dash-create-pass" class="mt-5 hidden">
             <h1 class=" pl-4 font-extrabold text-slate-700">create a password</h1>
 
             <input id="create_password" class="p-2 rounded-full hover:scale-[1.1] duration-1000 border-solid border-2 border-indigo-600" type="text" placeholder="create password">
